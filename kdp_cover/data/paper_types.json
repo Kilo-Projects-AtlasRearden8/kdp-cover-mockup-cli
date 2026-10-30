@@ -1,0 +1,22 @@
+{
+  "paper_types": [
+    {
+      "id": "white",
+      "name": "White paper",
+      "ppi": 444,
+      "note": "KDP baseline pages-per-inch for black-and-white interior on white paper."
+    },
+    {
+      "id": "cream",
+      "name": "Cream paper",
+      "ppi": 444,
+      "note": "KDP baseline pages-per-inch for black-and-white interior on cream paper."
+    },
+    {
+      "id": "color",
+      "name": "Color paper",
+      "ppi": 444,
+      "note": "Planning estimate. KDP color-press spine width varies with ink coverage; confirm with KDP's cover calculator before upload."
+    }
+  ]
+}

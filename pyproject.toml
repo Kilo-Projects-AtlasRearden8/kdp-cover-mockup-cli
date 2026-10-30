@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kdp-cover-mockup-cli"
+version = "0.1.0"
+description = "Local-first Python CLI that computes KDP cover dimensions and spine width from page count, paper type, and trim size. Outputs print-ready spec sheets. No keys, no network."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Asdale Dynamics, LLC" }]
+license = { text = "MIT" }
+keywords = ["kdp", "cover", "spine", "print", "book-publishing", "cli"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+
+[project.scripts]
+kdp-cover = "kdp_cover.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["kdp_cover*"]
+
+[tool.setuptools.package-data]
+kdp_cover = ["data/*.json"]
